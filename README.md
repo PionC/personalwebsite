@@ -7,6 +7,8 @@ First, create the project folder and install the `reat-icons` package:
 npx create-next-app@latest
 # and
 npm install react-icons
+# and 
+npm install framer-motion
 ```
 Then, run the development server:
 
