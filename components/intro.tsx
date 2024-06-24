@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Intro() {
   return (
@@ -38,7 +39,7 @@ export default function Intro() {
           </div>
         </div>
 
-        <motion.p
+        <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -48,7 +49,7 @@ export default function Intro() {
         <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
-        </motion.p>
+        </motion.h1>
 
         <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -81,7 +82,7 @@ export default function Intro() {
           </a>
 
           <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border dark:bg-white/10 dark:text-black/80"
           href="https://linkedin.com"
           target="_blank"
         >
@@ -89,11 +90,19 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border dark:bg-white/10 dark:text-black/80"
           href="https://github.com"
           target="_blank"
         >
           <FaGithubSquare />
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border dark:bg-white/10 dark:text-black/80"
+          href="https://leetcode.cn/u/hardcore-huglegbj/"
+          target="_blank"
+        >
+          <SiLeetcode />
         </a>
         </motion.div>
     </section>
